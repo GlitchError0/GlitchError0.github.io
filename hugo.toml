@@ -1,5 +1,23 @@
-
 baseURL = 'https://glitcherror0.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Project'
-theme = 'PaperMod'
+languageCode = 'zh-cn' 
+title = "GlitchError0's Space"
+theme = "PaperMod"
+
+[params]
+    env = "production"
+    [params.profileMode]
+        enabled = true
+        title = "Hello，I'm GlitchError0 👋"
+        imageUrl = "https://github.com/GlitchError0.png" # 这会自动抓取你的 GitHub 头像
+        imageWidth = 120
+        imageHeight = 120
+        
+        [[params.profileMode.buttons]]
+            name = "Archives"
+            url = "/archives"
+        [[params.profileMode.buttons]]
+            name = "Tags"
+            url = "/tags"
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/GlitchError0"
